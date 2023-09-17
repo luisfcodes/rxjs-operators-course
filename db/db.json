@@ -3,17 +3,23 @@
     {
       "id": 1,
       "name": "John Doe",
-      "email": "johndoe@example.com"
+      "email": "johndoe@example.com",
+      "cpf": "12345678900"
     },
     {
       "id": 2,
       "name": "Jane Doe",
-      "email": "janedoe@example.com"
+      "email": "janedoe@example.com",
+      "cpf": "12345678901"
     },
     {
       "id": 3,
       "name": "John Smith",
-      "email": "johnsmith@example.com"
+      "email": "johnsmith@example.com",
+      "cpf": "12345678902"
     }
-  ]
+  ],
+  "user": {
+    "cpf": "12345678900"
+  }
 }
