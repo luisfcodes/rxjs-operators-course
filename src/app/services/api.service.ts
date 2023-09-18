@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { concat, forkJoin, interval, map, merge, toArray, zip } from 'rxjs';
+import { concat, debounceTime, forkJoin, interval, map, merge, toArray, zip } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -73,5 +73,9 @@ export class ApiService {
       .pipe(
         toArray()
       )
+  }
+
+  getUsersDebounceTime(name: string) {
+    return this.http.get(`http://localhost:3000/users?name=${name}`)
   }
 }
